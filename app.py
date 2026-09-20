@@ -6,9 +6,9 @@ st.set_page_config(
 )
 
 st.title("📹 Karthick's Lorex Assistant for Agents")
-st.write("Enter a customer issue to view the troubleshooting steps.")
+st.write("Select the customer issue to view the troubleshooting steps.")
 
-# Troubleshooting database
+# Troubleshooting steps
 troubleshooting = {
 
     "IP Camera Offline": [
@@ -16,7 +16,7 @@ troubleshooting = {
         "Check the Ethernet cable connection at the camera.",
         "Check the Ethernet cable connection at the NVR/router/PoE switch.",
         "Check whether the camera appears in the NVR camera list.",
-        "Check the camera's network status.",
+        "Check the camera network status.",
         "Restart the camera and network device.",
         "Check whether the camera comes back online."
     ],
@@ -25,8 +25,7 @@ troubleshooting = {
         "Check whether the camera has power.",
         "Check the BNC/coaxial cable connection at the camera.",
         "Check the BNC/coaxial cable connection at the DVR.",
-        "Check the camera channel connection.",
-        "Check the camera power adapter or power supply.",
+        "Check the camera power supply.",
         "Restart the camera and DVR.",
         "Check whether video returns."
     ],
@@ -52,7 +51,7 @@ troubleshooting = {
 
     "Camera Image Blurry": [
         "Check whether the camera lens is clean.",
-        "Check whether the protective film has been removed from the lens.",
+        "Check whether the protective film has been removed.",
         "Check the camera focus.",
         "Check whether the issue occurs during daytime and nighttime.",
         "Restart the camera.",
@@ -63,7 +62,7 @@ troubleshooting = {
         "Check the camera power connection.",
         "Check the camera cable connection.",
         "Check whether the cable is damaged.",
-        "Check whether the flickering occurs during daytime, nighttime, or both.",
+        "Check whether the flickering occurs during daytime or nighttime.",
         "Restart the camera.",
         "Check whether the flickering continues."
     ],
@@ -71,9 +70,9 @@ troubleshooting = {
     "Night Vision Not Working": [
         "Check whether the camera has power.",
         "Check whether the issue occurs only at night.",
-        "Check whether the camera IR LEDs are functioning.",
+        "Check whether the IR LEDs are functioning.",
         "Check whether anything is blocking the camera lens.",
-        "Check the camera's night vision settings.",
+        "Check the camera night vision settings.",
         "Restart the camera.",
         "Check whether night vision is working."
     ],
@@ -92,9 +91,9 @@ troubleshooting = {
         "Check whether the PTZ camera has power.",
         "Check the camera connection.",
         "Check the PTZ control settings.",
-        "Check the PTZ address or configuration.",
+        "Check the PTZ configuration.",
         "Restart the camera and recorder.",
-        "Test the pan, tilt, and zoom controls.",
+        "Test pan, tilt, and zoom.",
         "Check whether PTZ movement is working."
     ],
 
@@ -128,7 +127,6 @@ troubleshooting = {
     ],
 
     "HDD Not Detected": [
-        "Check whether the NVR/DVR is powered on.",
         "Check the HDD status in the recorder settings.",
         "Power off the recorder.",
         "Check the HDD connections.",
@@ -157,13 +155,13 @@ troubleshooting = {
     ],
 
     "Device Offline in Lorex App": [
-        "Check whether the recorder or camera has power.",
+        "Check whether the camera or recorder has power.",
         "Check the internet connection.",
         "Check the network connection.",
-        "Check the device status on the recorder.",
+        "Check the device status.",
         "Restart the network device.",
-        "Restart the recorder or camera.",
-        "Check whether the device becomes online in the app."
+        "Restart the camera or recorder.",
+        "Check whether the device becomes online."
     ],
 
     "Push Notifications Not Working": [
@@ -171,7 +169,7 @@ troubleshooting = {
         "Check whether notifications are enabled on the phone.",
         "Check motion detection settings.",
         "Check the notification schedule.",
-        "Check the camera's motion detection settings.",
+        "Check the camera motion settings.",
         "Restart the app.",
         "Test notifications again."
     ],
@@ -208,8 +206,8 @@ troubleshooting = {
     "Date/Time Issue": [
         "Check the current date and time.",
         "Check the time zone.",
-        "Check whether automatic time synchronization is enabled.",
-        "Check the internet connection if network time is being used.",
+        "Check automatic time synchronization.",
+        "Check the internet connection.",
         "Correct the date and time settings.",
         "Restart the recorder if required.",
         "Check whether the correct time is displayed."
@@ -217,33 +215,17 @@ troubleshooting = {
 }
 
 
-# Issue input
-issue = st.text_input(
-    "Enter the customer issue:",
-    placeholder="Example: IP Camera Offline"
+# Dropdown
+issue = st.selectbox(
+    "🔍 Select the customer issue:",
+    ["-- Select an issue --"] + list(troubleshooting.keys())
 )
 
-# Show troubleshooting steps
-if issue:
 
-    matched_issue = None
+# Display troubleshooting steps automatically
+if issue != "-- Select an issue --":
 
-    for item in troubleshooting:
-        if issue.lower() == item.lower():
-            matched_issue = item
-            break
+    st.subheader(f"🛠️ Troubleshooting: {issue}")
 
-    if matched_issue:
-
-        st.subheader("Troubleshooting Steps")
-
-        for number, step in enumerate(
-            troubleshooting[matched_issue], start=1
-        ):
-            st.write(f"**{number}.** {step}")
-
-    else:
-
-        st.warning(
-            "Issue not found. Please enter an issue from the troubleshooting list."
-        )
+    for number, step in enumerate(troubleshooting[issue], start=1):
+        st.write(f"**{number}.** {step}")
