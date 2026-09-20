@@ -23,7 +23,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.markdown(
-    "<p style='color: black !important;'>Select the customer issue to view the troubleshooting steps.</p>",
+    """
+    <div style="text-align: center; color: black; font-size: 22px; font-weight: bold;">
+        Select the customer issue to view the troubleshooting steps.
+    </div>
+    """,
     unsafe_allow_html=True
 )
 # Troubleshooting steps
