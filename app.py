@@ -1,11 +1,11 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="CCTV Agent Assistant",
+Karthick's Lorex Assistant for Agents ",
     page_icon="📹"
 )
 
-st.title("📹 CCTV Agent Troubleshooting Assistant")
+st.title("📹 Lorex Agent Troubleshooting Assistant")
 st.write("Agent-only troubleshooting tool")
 
 issue = st.selectbox(
