@@ -16,12 +16,12 @@ troubleshooting = {
         "Get the picture of info screen.",
         "Get the picture of device label.",
         "Reset the password using the device id and date in the the tool."
-    ]
+    ],
 
     "Device removal": [
         "Get the picture of proof of Purchase, or Invoice, or Lease Agreement.",
         "Share the pictures to SME or Teamlead with case number for removing device."
-    ]
+    ],
 
     "IP Camera Offline": [
         "Check whether the camera has power.",
@@ -144,7 +144,7 @@ troubleshooting = {
         "Check the P2P Status - online.",
         "Check whether the device is online in the app.",
         "Restart the router and recorder.",
-        "Inform to remove and add device again."
+        "Ask the customer to remove and add device again."
     ],
 
     "Camera Not Connecting to Wi-Fi": [
