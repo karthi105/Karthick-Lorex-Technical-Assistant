@@ -2,7 +2,6 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Karthick's Lorex Assistant for Agents",
-    page_icon=""
     
 )
 
