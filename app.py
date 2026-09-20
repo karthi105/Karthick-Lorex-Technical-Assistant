@@ -24,7 +24,7 @@ st.markdown(
 )
 st.markdown(
     """
-    <div style="text-align: center; color: black; font-size: 22px; font-weight: bold;">
+    <div style="text-align: center; font-size: 22px; font-weight: bold;">
         Select the customer issue to view the troubleshooting steps.
     </div>
     """,
