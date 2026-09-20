@@ -3,7 +3,20 @@ import streamlit as st
 st.set_page_config(
     page_title="Karthick's Lorex Assistant for Agents",
     page_icon="📹"
+    
 )
+
+st.markdown("""
+<style>
+.stApp {
+    background-color: #1F438F;
+}
+
+h1, h2, h3, p, label {
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.title("📹 Karthick's Lorex Assistant for Agents")
 st.write("Select the customer issue to view the troubleshooting steps.")
