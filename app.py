@@ -22,8 +22,10 @@ st.markdown(
     "<h1 style='white-space: nowrap; font-size: 36px;'>📹 Karthick's Lorex Assistant for Agents</h1>",
     unsafe_allow_html=True
 )
-st.write("         Select the customer issue to view the troubleshooting steps.")
-
+st.markdown(
+    "<p style='color: black !important;'>Select the customer issue to view the troubleshooting steps.</p>",
+    unsafe_allow_html=True
+)
 # Troubleshooting steps
 troubleshooting = {
 
