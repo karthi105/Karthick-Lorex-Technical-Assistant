@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon="📹"
 )
 
-st.title("📹 Lorex Agent Troubleshooting Assistant")
+st.title("📹 Karthick's Lorex Assistant for Agents")
 st.write("Agent-only troubleshooting tool")
 
 issue = st.selectbox(
