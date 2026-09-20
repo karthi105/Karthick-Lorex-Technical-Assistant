@@ -27,7 +27,6 @@ st.markdown(
     <div style="text-align: center; font-size: 22px; font-weight: bold;">
         Select the customer issue to view the troubleshooting steps.
     </div>
-    </div>
     """,
     unsafe_allow_html=True
 )
@@ -240,7 +239,6 @@ troubleshooting = {
 
 # Dropdown
 issue = st.selectbox(
-    "🔍 Select the customer issue:",
     ["-- Select an issue --"] + list(troubleshooting.keys())
 )
 
