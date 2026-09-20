@@ -238,7 +238,7 @@ troubleshooting = {
 
 
 # Dropdown
-issue = st.selectbox(
+issue = st.selectbox( </div>
     "🔍 Select the customer issue:",
     ["-- Select an issue --"] + list(troubleshooting.keys())
 )
