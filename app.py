@@ -11,6 +11,18 @@ st.write("Select the customer issue to view the troubleshooting steps.")
 # Troubleshooting steps
 troubleshooting = {
 
+    "Password reset": [
+        "Get the picture of live view with the date and time",
+        "Get the picture of info screen",
+        "Get the picture of device label",
+        "Reset the password using the device id and date in the the tool"
+    ]
+
+    "Device removal": [
+        "Get the picture of proof of Purchase, or Invoice, or Lease Agreement.",
+        "Share the pictures to SME or Teamlead with case number for removing device."
+    ]
+
     "IP Camera Offline": [
         "Check whether the camera has power.",
         "Check the Ethernet cable connection at the camera.",
@@ -18,14 +30,15 @@ troubleshooting = {
         "Check whether the camera appears in the NVR camera list.",
         "Check the camera network status.",
         "Restart the camera and network device.",
-        "Check whether the camera comes back online."
+        "Check whether the camera comes back online.",
+        "Reset the camera if the camera has the rest button"
     ],
 
     "Analog Camera Offline": [
         "Check whether the camera has power.",
         "Check the BNC/coaxial cable connection at the camera.",
         "Check the BNC/coaxial cable connection at the DVR.",
-        "Check the camera power supply.",
+        "Check the camera power Adapter.",
         "Restart the camera and DVR.",
         "Check whether video returns."
     ],
@@ -87,16 +100,6 @@ troubleshooting = {
         "Check whether audio is working."
     ],
 
-    "PTZ Camera Not Moving": [
-        "Check whether the PTZ camera has power.",
-        "Check the camera connection.",
-        "Check the PTZ control settings.",
-        "Check the PTZ configuration.",
-        "Restart the camera and recorder.",
-        "Test pan, tilt, and zoom.",
-        "Check whether PTZ movement is working."
-    ],
-
     "Camera Not Recording": [
         "Check whether the camera is online.",
         "Check whether the HDD is detected.",
@@ -119,6 +122,7 @@ troubleshooting = {
 
     "Playback Not Working": [
         "Check whether the system is currently recording.",
+        "Check C symbol on the live view",
         "Check the selected date and time.",
         "Check whether recordings exist for the selected period.",
         "Check the HDD status.",
@@ -137,11 +141,10 @@ troubleshooting = {
 
     "Remote Viewing Not Working": [
         "Check whether the NVR/DVR is connected to the internet.",
-        "Check the network cable connection.",
-        "Check the recorder network status.",
+        "Check the P2P Status - online.",
         "Check whether the device is online in the app.",
         "Restart the router and recorder.",
-        "Check remote viewing again."
+        "Inform to remove and add device again."
     ],
 
     "Camera Not Connecting to Wi-Fi": [
@@ -151,7 +154,7 @@ troubleshooting = {
         "Verify the Wi-Fi password.",
         "Restart the camera and router.",
         "Try connecting the camera again.",
-        "Check whether the camera comes online."
+        "Check whether customer uses 2.4 GHZ."
     ],
 
     "Device Offline in Lorex App": [
@@ -193,14 +196,11 @@ troubleshooting = {
         "Check whether the recorder powers on."
     ],
 
-    "HDMI/VGA Display Issue": [
-        "Check whether the NVR/DVR is powered on.",
-        "Check the HDMI/VGA cable connection.",
-        "Check whether the monitor is powered on.",
-        "Select the correct monitor input source.",
-        "Try another compatible display cable.",
-        "Restart the recorder and monitor.",
-        "Check whether the display appears."
+    "No Input Signal": [
+        "Check the HDMI connection on both monitor and recorder",
+        "Remove and add the hdmi cable",
+        "Inform Cx to change the HDMI Cable"
+        "inform to connect with a different monitor"
     ],
 
     "Date/Time Issue": [
