@@ -18,7 +18,10 @@ h1, h2, h3, p, label {
 </style>
 """, unsafe_allow_html=True)
 
-st.title("📹 Karthick's Lorex Assistant for Agents")
+st.markdown(
+    "<h1 style='white-space: nowrap; font-size: 36px;'>📹 Karthick's Lorex Assistant for Agents</h1>",
+    unsafe_allow_html=True
+)
 st.write("Select the customer issue to view the troubleshooting steps.")
 
 # Troubleshooting steps
