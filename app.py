@@ -92,7 +92,7 @@ troubleshooting = {
     ],
 
     "Camera Image Flickering": [
-        "Check the camera power connection.",
+        "Check the camer power connection.",
         "Check the camera cable connection.",
         "Check whether the cable is damaged.",
         "Check whether the flickering occurs during daytime or nighttime.",
