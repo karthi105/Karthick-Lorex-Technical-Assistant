@@ -251,7 +251,13 @@ issue = st.selectbox(
 # Display troubleshooting steps automatically
 if issue != "-- Select an issue --":
 
-    st.subheader(f"🛠️ Troubleshooting: {issue}")
+    st.markdown(
+        f"<h2 style='text-align:center;'>🛠️ Troubleshooting: {issue}</h2>",
+        unsafe_allow_html=True
+    )
 
     for number, step in enumerate(troubleshooting[issue], start=1):
-        st.write(f"**{number}.** {step}")
+        st.markdown(
+            f"<p style='text-align:center;'><b>{number}.</b> {step}</p>",
+            unsafe_allow_html=True
+        )
