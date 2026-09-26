@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Karthick's Lorex Assistant for Agents",
+    page_title="Lorex Assistant for Agents",
 )
 
 st.markdown("""
