@@ -7,7 +7,7 @@ st.set_page_config(
 st.markdown("""
 <style>
 .stApp {
-    background-color: #FFA500;
+    background-color: #FF8C00;
 }
 
 h1, h2, h3, p, label {
