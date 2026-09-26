@@ -245,6 +245,7 @@ troubleshooting = {
 # Dropdown
 st.write("")
 issue = st.selectbox(
+    "",
     ["-- Select an issue --"] + list(troubleshooting.keys())
 )
 
