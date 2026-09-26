@@ -32,7 +32,7 @@ st.markdown(
 troubleshooting = {
 
     "Password reset": [
-        "Get the picture of live view with the date and time.",
+        "Get the picture of live view with the date and time",
         "Get the picture of info screen.",
         "Get the picture of device label.",
         "Reset the password using the device id and date in the the tool."
