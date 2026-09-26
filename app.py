@@ -8,8 +8,6 @@ st.markdown("""
 <style>
 .stApp {
     background-color: #163A70;
-    max-width: 1200px;
-    margin: auto;
 }
 
 h1, h2, h3, p, label {
