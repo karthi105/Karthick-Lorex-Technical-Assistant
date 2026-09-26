@@ -9,6 +9,10 @@ st.markdown("""
 .stApp {
     background-color: #163A70;
 }
+.block-container {
+    max-width: 1200px;
+    margin: auto;
+}
 
 h1, h2, h3, p, label {
     color: white !important;
