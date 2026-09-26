@@ -25,10 +25,7 @@ st.markdown(
     "<h1 style='text-align: center; white-space: nowrap; font-size: 72px;'>Lorex Assistant for Agents</h1>",
     unsafe_allow_html=True
 )
-st.markdown(
-    "<h1 style='text-align:center; font-size:72px;'>Lorex Assistant for Agents <small style='font-size:14px;'>Created by Karthick</small></h1>",
-    unsafe_allow_html=True
-)
+
 st.markdown(
     """
     <div style="text-align: center; font-size: 22px; font-weight: bold;">
