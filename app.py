@@ -26,6 +26,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.markdown(
+    "<p style='text-align: center; font-size: 12px;'>Created by Karthick</p>",
+    unsafe_allow_html=True
+)
+st.markdown(
     """
     <div style="text-align: center; font-size: 22px; font-weight: bold;">
         Select the customer issue to view the troubleshooting steps.
@@ -33,10 +37,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.markdown(
-    "<p style='text-align: center; font-size: 12px;'>Created by Karthick</p>",
-    unsafe_allow_html=True
-)
+
 # Troubleshooting steps
 troubleshooting = {
 
