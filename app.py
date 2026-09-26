@@ -13,7 +13,9 @@ st.markdown("""
     max-width: 1200px;
     margin: auto;
 }
-
+.stMarkdown, .stSubheader {
+    text-align: center;
+    
 h1, h2, h3, p, label {
     color: white !important;
 }
