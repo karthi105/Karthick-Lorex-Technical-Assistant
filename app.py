@@ -17,7 +17,7 @@ h1, h2, h3, p, label {
 """, unsafe_allow_html=True)
 
 st.markdown(
-    "<h1 style='white-space: nowrap; font-size: 36px;'>📹 Karthick's Lorex Assistant for Agents</h1>",
+    "<h1 style='white-space: nowrap; font-size: 36px;'>Karthick's Lorex Assistant for Agents</h1>",
     unsafe_allow_html=True
 )
 st.markdown(
