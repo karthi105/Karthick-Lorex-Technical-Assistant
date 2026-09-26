@@ -33,6 +33,10 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+st.markdown(
+    "<p style='text-align: center; font-size: 12px;'>Created by Karthick</p>",
+    unsafe_allow_html=True
+)
 # Troubleshooting steps
 troubleshooting = {
 
